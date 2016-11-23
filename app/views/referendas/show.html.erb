@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Referenda title:</strong>
+  <%= @referenda.referenda_title %>
+</p>
+
+<p>
+  <strong>Referenda desc:</strong>
+  <%= @referenda.referenda_desc %>
+</p>
+
+<p>
+  <strong>Referenda type:</strong>
+  <%= @referenda.referenda_type %>
+</p>
+
+<p>
+  <strong>Ballot:</strong>
+  <%= @referenda.ballot %>
+</p>
+
+<%= link_to 'Edit', edit_referenda_path(@referenda) %> |
+<%= link_to 'Back', referendas_path %>

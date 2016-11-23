@@ -1,0 +1,42 @@
+<%= form_for(question_choice) do |f| %>
+  <% if question_choice.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(question_choice.errors.count, "error") %> prohibited this question_choice from being saved:</h2>
+
+      <ul>
+      <% question_choice.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :choice_id %>
+    <%= f.text_field :choice_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :voter_id %>
+    <%= f.text_field :voter_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :candidate_id %>
+    <%= f.text_field :candidate_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :question_id %>
+    <%= f.text_field :question_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :choice_source_url %>
+    <%= f.text_field :choice_source_url %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

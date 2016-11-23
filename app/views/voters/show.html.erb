@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Session:</strong>
+  <%= @voter.session_id %>
+</p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @voter.zip %>
+</p>
+
+<%= link_to 'Edit', edit_voter_path(@voter) %> |
+<%= link_to 'Back', voters_path %>

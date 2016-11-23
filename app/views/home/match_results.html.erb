@@ -1,0 +1,88 @@
+<h1>
+    <span class="underline">Your</span>
+    Match Results</h1>
+<p>Based on the the answers you gave on the previous page, we have matched you with the following candidates based on your ZIP Code ({{voter.zip_id.zip_code}}). See how you match up with them.</p>
+<hr/>
+<input id="mail-results" type="button" value="E-Mail Results"/>
+<hr/>
+<!-- BEGIN MATCH -->
+<div class="match">
+    <h2>You v. <a href="{{link_to_candidate}}">{{candidate.first_name}} {{candidate.last_name}}</a></h2>
+    <h3>Total Match</h3>
+    <p>Psuedocode:<br/>percent = 0; foreach (voter-choice and candidate-choice) { if(voter-choice === candidate-choice) percent++; }<br/>
+        percent = percent * 100;<br/>
+        Use percent in values for class below and percentage value.</p>
+    <div class="match-container">
+        <div class="match-percentage per-30">{{percent}}%</div>
+    </div>
+    <table class="detail-table match-table match-results-table">
+        <thead>
+            <tr>
+                <th>You (voter.id)</th>
+                <th>Match</th>
+                <th>Them (candidate.id)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="match-table-question" colspan="3">{{question.question}}</td>
+            </tr>
+            <tr>
+                <td>{{question_choices.choice}}</td>
+                <td>YES/NO<br/>
+                    if voter answer === candidate answer</td>
+                <td>{{question_choices.choice}}</td>
+            </tr>
+            <tr>
+                <td class="match-table-question" colspan="3">{{question.question}}</td>
+            </tr>
+            <tr>
+                <td>{{question_choices.choice}}</td>
+                <td>YES/NO<br/>
+                    if voter answer === candidate answer</td>
+                <td>{{question_choices.choice}}</td>
+            </tr>
+        </tbody>
+    </table>
+    [...]
+    <hr />
+</div>
+<!-- END -->
+<!-- BEGIN MATCH -->
+<div class="match">
+    <h2>You v. <a href="{{link_to_candidate}}">{{candidate.first_name}} {{candidate.last_name}}</a></h2>
+    <h3>Total Match</h3>
+    <div class="match-container">
+        <div class="match-percentage per-70">70%</div>
+    </div>
+    <table class="detail-table match-table match-results-table">
+        <thead>
+            <tr>
+                <th>You (voter.id)</th>
+                <th>Match</th>
+                <th>Them (candidate.id)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="match-table-question" colspan="3">{{question.question}}</td>
+            </tr>
+            <tr>
+                <td>{{question_choices.choice}}</td>
+                <td>YES</td>
+                <td>{{question_choices.choice}}</td>
+            </tr>
+            <tr>
+                <td class="match-table-question" colspan="3">{{question.question}}</td>
+            </tr>
+            <tr>
+                <td>{{question_choices.choice}}</td>
+                <td>YES</td>
+                <td>{{question_choices.choice}}</td>
+            </tr>
+        </tbody>
+    </table>
+    [...]
+    <hr />
+</div>
+<!-- END -->

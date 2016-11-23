@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Stance:</strong>
+  <%= @stance.stance %>
+</p>
+
+<p>
+  <strong>Stance source url:</strong>
+  <%= @stance.stance_source_url %>
+</p>
+
+<p>
+  <strong>Referenda:</strong>
+  <%= @stance.referenda %>
+</p>
+
+<p>
+  <strong>Candidate:</strong>
+  <%= @stance.candidate %>
+</p>
+
+<p>
+  <strong>Voter:</strong>
+  <%= @stance.voter %>
+</p>
+
+<%= link_to 'Edit', edit_stance_path(@stance) %> |
+<%= link_to 'Back', stances_path %>

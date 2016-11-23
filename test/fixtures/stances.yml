@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  stance: 
+  stance_source_url: 
+  referenda: one
+  candidate: one
+  voter: one
+
+two:
+  stance: 
+  stance_source_url: 
+  referenda: two
+  candidate: two
+  voter: two

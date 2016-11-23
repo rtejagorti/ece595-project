@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Precinct num:</strong>
+  <%= @precinct.precinct_num %>
+</p>
+
+<p>
+  <strong>Precinct type:</strong>
+  <%= @precinct.precinct_type %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @precinct.city %>
+</p>
+
+<%= link_to 'Edit', edit_precinct_path(@precinct) %> |
+<%= link_to 'Back', precincts_path %>

@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Referendas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Referenda title</th>
+      <th>Referenda desc</th>
+      <th>Referenda type</th>
+      <th>Ballot</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @referendas.each do |referenda| %>
+      <tr>
+        <td><%= referenda.referenda_title %></td>
+        <td><%= referenda.referenda_desc %></td>
+        <td><%= referenda.referenda_type %></td>
+        <td><%= referenda.ballot %></td>
+        <td><%= link_to 'Show', referenda %></td>
+        <td><%= link_to 'Edit', edit_referenda_path(referenda) %></td>
+        <td><%= link_to 'Destroy', referenda, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Referenda', new_referenda_path %>

@@ -1,0 +1,27 @@
+<%= form_for(zip) do |f| %>
+  <% if zip.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(zip.errors.count, "error") %> prohibited this zip from being saved:</h2>
+
+      <ul>
+      <% zip.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :zip_code %>
+    <%= f.text_field :zip_code %>
+  </div>
+
+  <div class="field">
+    <%= f.label :precinct_id %>
+    <%= f.text_field :precinct_id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

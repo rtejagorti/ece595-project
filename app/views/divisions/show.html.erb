@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Division num:</strong>
+  <%= @division.division_num %>
+</p>
+
+<p>
+  <strong>Division type:</strong>
+  <%= @division.division_type %>
+</p>
+
+<p>
+  <strong>Precinct:</strong>
+  <%= @division.precinct %>
+</p>
+
+<%= link_to 'Edit', edit_division_path(@division) %> |
+<%= link_to 'Back', divisions_path %>

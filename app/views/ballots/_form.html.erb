@@ -1,0 +1,22 @@
+<%= form_for(ballot) do |f| %>
+  <% if ballot.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(ballot.errors.count, "error") %> prohibited this ballot from being saved:</h2>
+
+      <ul>
+      <% ballot.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :election_year %>
+    <%= f.text_field :election_year %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

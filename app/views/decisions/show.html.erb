@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Decision title:</strong>
+  <%= @decision.decision_title %>
+</p>
+
+<p>
+  <strong>Decision desc:</strong>
+  <%= @decision.decision_desc %>
+</p>
+
+<p>
+  <strong>Decision position:</strong>
+  <%= @decision.decision_position %>
+</p>
+
+<p>
+  <strong>Decision source url:</strong>
+  <%= @decision.decision_source_url %>
+</p>
+
+<p>
+  <strong>Decision date:</strong>
+  <%= @decision.decision_date %>
+</p>
+
+<p>
+  <strong>Judge:</strong>
+  <%= @decision.judge %>
+</p>
+
+<%= link_to 'Edit', edit_decision_path(@decision) %> |
+<%= link_to 'Back', decisions_path %>

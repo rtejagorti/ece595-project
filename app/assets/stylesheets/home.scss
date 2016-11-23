@@ -1,0 +1,6 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#splash { background-image: url(image-path('square_bg.png')); }
+#splash_logo { background: url(image-path('logo.svg')) 0 0 no-repeat; background-size: contain; }

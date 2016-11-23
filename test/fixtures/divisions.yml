@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  division_num: 
+  division_type: 
+  precinct: one
+
+two:
+  division_num: 
+  division_type: 
+  precinct: two

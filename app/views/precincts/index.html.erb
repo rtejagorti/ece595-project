@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Precincts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Precinct num</th>
+      <th>Precinct type</th>
+      <th>City</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @precincts.each do |precinct| %>
+      <tr>
+        <td><%= precinct.precinct_num %></td>
+        <td><%= precinct.precinct_type %></td>
+        <td><%= precinct.city %></td>
+        <td><%= link_to 'Show', precinct %></td>
+        <td><%= link_to 'Edit', edit_precinct_path(precinct) %></td>
+        <td><%= link_to 'Destroy', precinct, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Precinct', new_precinct_path %>

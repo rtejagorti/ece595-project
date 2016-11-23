@@ -1,0 +1,42 @@
+<%= form_for(stance) do |f| %>
+  <% if stance.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(stance.errors.count, "error") %> prohibited this stance from being saved:</h2>
+
+      <ul>
+      <% stance.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :stance %>
+    <%= f.text_field :stance %>
+  </div>
+
+  <div class="field">
+    <%= f.label :stance_source_url %>
+    <%= f.text_field :stance_source_url %>
+  </div>
+
+  <div class="field">
+    <%= f.label :referenda_id %>
+    <%= f.text_field :referenda_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :candidate_id %>
+    <%= f.text_field :candidate_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :voter_id %>
+    <%= f.text_field :voter_id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

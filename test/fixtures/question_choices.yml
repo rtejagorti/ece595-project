@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  choice: one
+  voter: one
+  candidate: one
+  question: one
+  choice_source_url: 
+
+two:
+  choice: two
+  voter: two
+  candidate: two
+  question: two
+  choice_source_url: 

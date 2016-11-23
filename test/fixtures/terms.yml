@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  position_title: 
+  termStart: 
+  termEnd: 
+  candidate: one
+
+two:
+  position_title: 
+  termStart: 
+  termEnd: 
+  candidate: two

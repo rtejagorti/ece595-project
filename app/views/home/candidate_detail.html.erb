@@ -1,0 +1,45 @@
+<h1>{{first_name}} {{last_name}}</h1>
+<h2>{{term.position_title}} (Most Recent), {{isEncumbent}}, {{pol_aff}}<br />
+{{precinct.precinct_num}}, {{city.city_name}}, {{county.county_name}}, {{state.state_name}}, {{country.country_name}}</h2>
+<ul id="contact_options">
+    <li><a href="mailto:{{email}}">E-mail</a></li>
+    <li><a href="{{pol_URL}}">Website</a></li>
+</ul>
+<p>{{biography}}</p>
+<h3>Stances</h3>
+<table class="detail-table candidate-stance-table">
+  <thead>
+      <tr>
+          <th>Topic</th>
+          <th>Stance</th>
+          <th>Stance Source</th>
+          <th>Details</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>{{referenda.title}}</td>
+          <td>{{stance.stance}}</td>
+          <td>{{stance.stance_source_URL}}</td>
+          <td><a href="{{this_will_link_to_referenda_or_issue}}">More&hellip;</a></td>
+      </tr>
+  </tbody>
+</table>
+
+<h3>Past Terms</h3>
+<table class="detail-table past-terms-table">
+    <thead>
+        <tr>
+            <th>Position Title</th>
+            <th>Term Start</th>
+            <th>Term End</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{term.position_title}}</td>
+            <td>{{term.termStart}}</td>
+            <td>{{term.termEnd}}</td>
+        </tr>
+    </tbody>
+</table>

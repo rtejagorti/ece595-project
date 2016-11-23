@@ -1,0 +1,32 @@
+<%= form_for(division) do |f| %>
+  <% if division.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(division.errors.count, "error") %> prohibited this division from being saved:</h2>
+
+      <ul>
+      <% division.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :division_num %>
+    <%= f.text_field :division_num %>
+  </div>
+
+  <div class="field">
+    <%= f.label :division_type %>
+    <%= f.text_field :division_type %>
+  </div>
+
+  <div class="field">
+    <%= f.label :precinct_id %>
+    <%= f.text_field :precinct_id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

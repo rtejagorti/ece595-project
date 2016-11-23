@@ -1,0 +1,23 @@
+<h1>{{referenda.title}} where {{referenda.type}} == 'issue'</h1>
+<h2>{{referenda.type}}</h2>
+<p>{{referenda.desc}}</p>
+
+<h3>Candidates' Stances</h3>
+<table class="detail-table issue-stance-table">
+    <thead>
+        <tr>
+            <th>Last Name</th>
+            <th>First Name</th>
+            <th>Stance</th>
+            <th>Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{candidate.last_name}}</td>
+            <td>{{candidate.first_name}}</td>
+            <td>{{stance.stance}}</td>
+            <td><a href="{{this_will_link_to_candidate}}">More&hellip;</a></td>
+        </tr>
+    </tbody>
+</table>

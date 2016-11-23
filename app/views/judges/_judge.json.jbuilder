@@ -1,0 +1,2 @@
+json.extract! judge, :id, :judge_firstname, :judge_lastname, :isSitting, :judge_biography, :judge_email, :judge_polaff, :ballot_id, :precinct, :created_at, :updated_at
+json.url judge_url(judge, format: :json)

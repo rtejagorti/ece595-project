@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>myVote</title>
+    <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%= stylesheet_link_tag    'default', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700|Roboto" rel="stylesheet">
+    <%= javascript_include_tag 'default', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="splash">
+      <div id="splash_logo"><%= link_to "myVote", root_path %></div>
+        <div id="navigation">
+        <h2>Explore</h2>
+        <ul>
+          <li><%= link_to "Candidates", candidates_path %></li>
+          <li><%= link_to "Judges", judges_path %></li>
+          <li><%= link_to "Issues", issues_path %></li>
+          <li><%= link_to "Bonds", bonds_path %></li>
+          <li class="li-match"><%= link_to "Find Your Match", match_path %></li>
+        </ul>
+        </div>
+      </div>
+      <div id="content">
+    <%= yield %>
+    <div class="note">
+      <p><strong>Disclaimer</strong>. myVote tracks your navigation through the matching portion of this site with
+        a temporary session variable. What does a session variable do? It prevents you from having to register
+        while you're here to get your matches. The only information stored on our end is that session variable and
+        your provided ZIP Code (to provide specific matches). That's it. It would be impossible to identify you with
+        this information, and is stored purely for analytical methods. Allowing us this data keeps this site
+        free, and more importantly, anonymous.</p>
+      </div>
+</div>
+  </div>
+  <footer>
+    <p>&copy; 2016 myVote</p>
+  </footer>
+  </body>
+</html>

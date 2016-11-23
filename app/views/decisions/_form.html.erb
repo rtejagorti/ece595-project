@@ -1,0 +1,47 @@
+<%= form_for(decision) do |f| %>
+  <% if decision.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(decision.errors.count, "error") %> prohibited this decision from being saved:</h2>
+
+      <ul>
+      <% decision.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :decision_title %>
+    <%= f.text_field :decision_title %>
+  </div>
+
+  <div class="field">
+    <%= f.label :decision_desc %>
+    <%= f.text_field :decision_desc %>
+  </div>
+
+  <div class="field">
+    <%= f.label :decision_position %>
+    <%= f.text_field :decision_position %>
+  </div>
+
+  <div class="field">
+    <%= f.label :decision_source_url %>
+    <%= f.text_field :decision_source_url %>
+  </div>
+
+  <div class="field">
+    <%= f.label :decision_date %>
+    <%= f.text_field :decision_date %>
+  </div>
+
+  <div class="field">
+    <%= f.label :judge_id %>
+    <%= f.text_field :judge_id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

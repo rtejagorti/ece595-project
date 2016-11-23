@@ -1,0 +1,24 @@
+<h1>{{first_name}} {{last_name}}</h1>
+<h2>{{isSitting}}, {{pol_aff}}<br />
+{{district.district_num}}, {{city.city_name}}, {{county.county_name}}, {{state.state_name}}, {{country.country_name}}</h2>
+<ul id="contact_options">
+    <li><a href="mailto:{{email}}">E-mail</a></li>
+</ul>
+<p>{{biography}}</p>
+<h3>Recent Decisions</h3>
+<table class="detail-table judge-decision-table">
+  <thead>
+      <tr>
+          <th>Title</th>
+          <th>Decision</th>
+          <th>Decision Source</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>{{decision.title}}</td>
+          <td>{{decision.position}}</td>
+          <td>{{decision.decision_source_URL}}</td>
+      </tr>
+  </tbody>
+</table>
